@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>
+        
+            CS 187 by Harmeet Singh
+            
+        </title>
+        <style>
+            body{
+                background-color: white
+            }
+            
+            a:link {
+                color: lightpink
+            }
+            a:visited{
+                color: orange
+            }
+            a:hover{
+                color: deeppink
+            }
+            a:active{
+                color: purple
+            }
+            
+            * {box-sizing: border-box}
+            body {font-family: "Lato", sans-serif;}
+            
+            .tab {
+                float: left;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+                width: 30%;
+                height: 300px;
+            }
+            
+            .tab button {
+                display: block;
+                background-color: inherit;
+                color: black;
+                padding: 22px 16px;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+            
+            .tab button:hover {
+                background-color: #ddd;
+            }
+            
+            .tab button.active {
+                background-color: #ccc;
+            }
+            
+            .tabcontent {
+                float: left;
+                padding: 0px 12px;
+                background-color: #64485C;
+                color: #ADADAD;
+                border: 1px solid #ccc;
+                width: 70%;
+                height: 100%;
+            }
+            
+        </style>
+    
+    </head>
+    
+    <body style="background-color: #2E1114">
+        
+        <div style="text-align: center">
+            
+            <!--Title with a hidden message-->
+            <h2 title = "Hello there :)"  style= "font-family:Times New Roman; font-size: 30px; color:#ADADAD; text-align: center; border: 2px solid pink; background-color: #501B1D">CS 187 Breakdown by Harmeet Singh</h2>
+            
+            
+            <img src="https://cdn.discordapp.com/attachments/757593979503116291/790336356437852160/UMB_2.png" style="width:200px; height:263">
+            
+            <!--Text explaining site--> 
+            <div style= "color: #ADADAD; font-size: 20px; border: 2px solid pink; background-color: #501B1D">
+                <p>
+                On this site I will go over what I learned from CS 187<br>
+            
+                Hopefully you learn something interesting about Computer Science<br><br>
+            
+                <a href = "https://www.umb.edu/">
+                UMass Boston  
+                </a>
+            
+                </p>
+            </div>
+        </div>
+        <br>
+        
+        
+        <div style="text-align: center; border: 2px solid pink; color: #ADADAD; background-color: #501B1D">
+            <h2>What I learned</h2>
+            <p>Click the tabs to see the contents of each</p>
+        </div>
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openLecture(event, 'History of Computer Science')" id="defaultOpen">History of Computer Science</button>
+            <button class="tablinks" onclick="openLecture(event, 'Face Recognition')">Face Recognition</button>
+            <button class="tablinks" onclick="openLecture(event, 'Logic')">Logic</button>
+            <button class="tablinks" onclick="openLecture(event, 'Robotics')">Robotics</button>
+            <button class="tablinks" onclick="openLecture(event, 'Autonomous Vehicles')">Autonomous Vehicles</button>
+        </div>
+
+        <div id="History of Computer Science" class="tabcontent">
+            <h3>History of Computer Science</h3>
+            <p>
+                The first computing tool was the abacus. It was an example of an analog computer which was basically a computer without wires and electricity. It was used by more ancient people and now we have digital computers because of their efficiency.<br><br>
+                
+                The computers use algorithms and binary logic to tell what is happening. Binary logic refers to binary numbers and using the numbers to tell what is what as a 0 would represent false for a given value while a 1 would represent true. Algorithms are set equations that can solve given problems with the same method each time. <br><br>
+                
+                There are two people who are seen as the founders of Modern Computing, Charles Babbage and Ada Lovelace. Charles had made the first mechanical computer and all of the esstiental ideas of Computing are founded by him and can be found in his work. Ada Lovelace was good with math and had Babbage as his mentor and she came up with more notes on his notes and had been seen as the first computer programmer. <br><br>
+                
+                Alan Turing, who is the founder of computer science had come up with a computer that could take any algorithm and use it rather than having separate machines work on different things. He is also the one who made the Turing Test which tests if a machine is hard to tell from a person. <br><br>
+                
+                Computers had started as massive machines to calculate equations and such and required multiple people to maintain them like the computer called the ENIAC or Colossus and as time went on, they got more and more efficient. They became smaller and now you can fit one in your pocket. <br><br>
+            </p>
+        </div>
+
+        <div id="Face Recognition" class="tabcontent">
+            <h3>Face Recognition</h3>
+            <p>
+                Face recognition is both cool to think about, but also scary as it seems to remain as this dangerous and helpful tool. <br><br>
+                
+                Face recognition requires finding a face through pixels in an image. The pixels themselves have only a small range of colors, red, green and blue which mix together to create other colors. This helps make sure each pixel is the proper shade and such for each image that is trying to find. Grayscale exists too for these images. However, it works easier as the pixels now only have one range which is white to black. <br><br>
+                
+                After the program finds its target it will put the image into a new format where the image has the eyes and lips in the same spot every time it comes to it. <br><br>
+                
+                When it comes to verifying the image is correct, the programs will find another image of the person and one of someone random and do the calculations to see that the two same people are more closely related to their measurements of distinct features. <br><br>
+                
+                However the implications are both seen as good, but also as bad. They can help improve security in many places, doorbells, phone logins, and others such as concerts and airports. It helps monitor which people are going where. Which is also scary because people know where you are without you actually knowing who knows your location. To might even lead to false accusations as someone might be mistaken for another person. <br><br>
+                
+            </p> 
+        </div>
+
+        <div id="Logic" class="tabcontent">
+            <h3>Logic</h3>
+            <p>
+                Logic is very involved with Computer Science because of how often we need to stop and think of rules to create something. Logic is known as formal reasoning. Logic helps determine something. If you know that all cats are annoying, and the Ben is a cat. You would use logic to know that Ben is annoying. Logic helps understand stuff from the data and from other arguments.<br><br>
+                
+                Computers use logic in a similar manner. Binary lets it take in multiple arguments and then output a single True or False based on rules. There can be many premises, but after evaluating each of them the computer will only give back one response. <br><br>
+                
+                They use both deductive and inductive reasoning.  Deductive uses what's already known while inductive uses more specific observations and understands the meaning behind words and then creating a response. <br><br>
+                
+                When using logic, you need to be aware of fallacies. Which is when an argument seems false, but in fact might be true because of outside sources. If people with power, i.e. celebrities saying that vaccines are harmful, people will believe it even if it is not the case. <br><br>
+                
+            </p>
+        </div>
+
+        <div id="Robotics" class="tabcontent">
+            <h3>Robotics</h3>
+            <p>
+                Computers are also obviously used for robots. Now before creating robots, people have come up with laws for them to ensure the safety of humanity. Robots may not harm humans or allow humans to come to harm through inaction. They must obey humans unless they conflict with harm. Robots must keep themselves safe as long as it doesn't go against the first two rules. <br><br>
+                
+                The scary thing about robots is the uncanny feeling they bring. Many robots look as if they are humans, they even talk as if they are humans, yet there is something about them that makes it feel strange and off. They have the same senses as us, or as similar as they can get, where they see the world around them and react accordingly. <br><br>
+                
+                They use computers and logic/algorithms as mentioned before. They utilize these to help understand their world and do tasks that are requested of them through programs or voice.<br><br>
+                
+                They help a lot if medical and exploration fields. Going places never explored before. Helping with developing medicine and such. The industrial faculties use lots of robots too, as it helps cut down workers and improve efficiency, however you lose people and people loss jobs as a result of robots.<br><br>
+            </p>
+        </div>
+
+        <div id="Autonomous Vehicles" class="tabcontent">
+            <h3>Autonomous Vehicles</h3>
+            <p>
+                Robots are able to control themselves, yet people have made computers and robots work with other machines. Such as cars.<br><br>
+                
+                The cars come with sensors and do their best to follow the given lines and rules by using sensors. It uses lights, motion sensors and cameras to help "see" and take the best course of action. If something comes in front it will stop and such.<br><br>
+                
+                The cars themselves could be dangerous as they aren't perfect. Some might not align with the lines, or some might make strange turns and requires people to always be in the driver seat in case something goes wrong. If the drivers weren't there, it could lead to accidents with no one to really blame other that the car company/programmers.<br><br>
+            </p>
+        </div>
+        
+        
+        <script>
+            function openLecture(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            
+            document.getElementById("defaultOpen").click();
+            </script>
+        
+        
+        
+        
+        
+    </body>
+    
+</html>
